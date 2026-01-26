@@ -1,4 +1,5 @@
-# SSP-protease-inhibitor-prediction
+# **PINPOINT** – <u>P</u>rotease <u>I</u><u>N</u>hibitor <u>P</u>redicti<u>O</u><u>N</u> at <u>P</u>lant–pathoge<u>N</u> <u>I</u>n<u>T</u>erface
+
 
 # Pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
 
