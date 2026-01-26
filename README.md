@@ -4,7 +4,7 @@
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
-This repository contains the code and notebooks for **SSP-protease-inhibitor-prediction**, a deep learning pipeline for identifying small secretory proteins (SSPs) with no known Pfam domain as protease inhibitors based on mature protein sequence and structure. All modules run directly in Google Colab—no local installation required. The free tier GPU can handle up to ~4000 SSPs efficiently; for larger datasets, we recommend **Colab Pro** (for extended runtime/GPU) or local installation with GPU acceleration.
+This repository contains the code and notebooks for **PINPOINT**, a deep learning pipeline for identifying small secretory proteins (SSPs) with no known Pfam domain as protease inhibitors based on mature protein sequence and structure. All modules run directly in Google Colab—no local installation required. The free tier GPU can handle up to ~4000 SSPs efficiently; for larger datasets, we recommend **Colab Pro** (for extended runtime/GPU) or local installation with GPU acceleration.
 
 ## Fine-Tuned Models (Openly Available on Hugging Face)
 
