@@ -1,6 +1,6 @@
 # SSP-protease-inhibitor-prediction
 
-# protease-inhibitor-prediction
+# Pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
