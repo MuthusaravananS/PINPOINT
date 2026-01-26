@@ -59,14 +59,25 @@ To use protease-inhibitor-prediction, first prepare mature protein sequences by 
 __If you use this tool or models, please cite:__ </br>
 Muthusaravanan S et al. (in preparation).
 
-Have data to contribute? 
+## Key tools and resources used in this pipeline:
+
+- **ESM-2 & ProtBERT base models** — Lin, Z., Akin, H., Rao, R., Hie, B., Zhu, Z., Lu, W., Smetanin, N., Verkuil, R., Kabeli, O., Shmueli, Y., et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science, 379(6638); Elnaggar A, Heinzinger M, Dallago C, Rehawi G, Wang Y, Jones L, Gibbs T, Feher T, Angerer C, Steinegger M, Bhowmik D, Rost B. ProtTrans: Toward Understanding the Language of Life Through Self-Supervised Learning. IEEE Trans Pattern Anal Mach Intell. 2022 Oct;44(10):7112-7127. 
+- **ESMFold / ESMAtlas API** — Lin et al. (2023). Evolutionary-scale prediction of atomic-level protein structure with a language model. Science. DOI: 10.1126/science.ade2574
+- **AlphaFold (precomputed models & Multimer)** — Jumper et al. (2021). Highly accurate protein structure prediction with AlphaFold. Nature. DOI: 10.1038/s41586-021-03819-2; Evans et al. (2022). Protein complex prediction with AlphaFold-Multimer. bioRxiv. DOI: 10.1101/2021.10.04.463034; Fleming J. et al. AlphaFold Protein Structure Database and 3D-Beacons: New Data and Capabilities. Journal of Molecular Biology, (2025). 
+- **ColabFold (GPU-accelerated implementation)** — Mirdita et al. (2022). ColabFold: making protein folding accessible to all. Nature Methods. DOI: 10.1038/s41592-022-01488-1. 
+- **PyOD (for one-class autoencoder in structural filtering)** — Zhao et al. (2019). PyOD: A Python Toolbox for Scalable Outlier Detection. Journal of Machine Learning Research.
+- **SignalP (external signal peptide prediction, recommended)** — Teufel et al. (2022). SignalP 6.0 predicts all five types of signal peptides using protein language models. Nature Biotechnology. DOI: 10.1038/s41587-021-01156-3. 
+- **MEROPS database** — Rawlings et al. (2018). The MEROPS database of proteolytic enzymes, their substrates and inhibitors in 2017 and a comparison with peptidases in the PANTHER database. Nucleic Acids Research. DOI: 10.1093/nar/gkx1134.
+- **UNIPROT database** — UniProt: the Universal Protein Knowledgebase in 2025.  Nucleic Acids Research, Volume 53, Issue D1, 6 January 2025, Pages D609–D617, https://doi.org/10.1093/nar/gkae1010. 
+ 
+## Have data to contribute? 
 ----
 We welcome datasets of known/putative protease inhibitors or SSPs to improve accuracy. Contact us!
 
-> Open models and Colab access democratize protein discovery. We encourage sharing sequences/structures in public repositories (UniProt, PDB, Zenodo) to accelerate inhibitor engineering and biological insights.
+> Open models and  access to data democratize discovery. We encourage sharing sequences/structures in public repositories for open use.
 
-__For inquiries, contact us.__
+## For inquiries, contact us.__
 
-Contact 
+# Contact 
 ----
 Muthusaravanan S - [@Muthu_Sivaram](https://x.com/Muthu_Sivaram) - muthusaravanan.ind@gmail.com
