@@ -9,6 +9,7 @@ This repository contains the code and notebooks for **SSP-protease-inhibitor-pre
 ## Fine-Tuned Models (Openly Available on Hugging Face)
 
 The core prediction models from this study were publicly hosted and free to use/download:
+
 All models focus on small proteins (<250 AA) and are trained on curated MEROPS/UniProt/AlphaFold data.
 
 ## Available Models on Hugging Face
