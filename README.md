@@ -16,9 +16,9 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
 
 | Model | Type | Base | Key Features | Link |
 |-------|------|------|--------------|------|
-| **PIPES-M** | Binary sequence classifier | ESM-2 (150M) | Fast sequence-based screening, no structure needed | [![Open PIPES-M](https://img.shields.io/badge/%F0%9F%A4%97%20PIPES-M-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIPES-M) |
-| **PIP-BERT** | Binary sequence classifier | ProtBERT | Rapid large-scale screening, probability + confidence scores | [![Open PIP-BERT](https://img.shields.io/badge/%F0%9F%A4%97%20PIP-BERT-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIP-BERT) |
-| **structuralmodule-protease_inhibitors** | Unsupervised one-class autoencoder (PyOD) | RCSB embeddings | Filters protein structures by reconstruction error, trained on ~18k PI structures | [![Open Structural Module](https://img.shields.io/badge/%F0%9F%A4%97%20Structural%20Module-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors) |
+| **PIPES-M** | Binary sequence classifier | ESM-2 (150M) | Large-scale sequence-based screening | [![Open PIPES-M](https://img.shields.io/badge/%F0%9F%A4%97%20PIPES-M-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIPES-M) |
+| **PIP-BERT** | Binary sequence classifier | ProtBERT | Large-scale sequence-based screening| [![Open PIP-BERT](https://img.shields.io/badge/%F0%9F%A4%97%20PIP-BERT-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIP-BERT) |
+| **structuralmodule-protease_inhibitors** | Unsupervised one-class autoencoder (PyOD) | RCSB embeddings | Filters non-inhibtior protein structures by reconstruction error, trained on ~18k PI structures | [![Open Structural Module](https://img.shields.io/badge/%F0%9F%A4%97%20Structural%20Module-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors) |
 
 ### Quick Overview
 
@@ -26,7 +26,7 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
   Fine-tuned **ESM-2** (150M params) binary classifier. Predicts if a protein sequence is a potential protease inhibitor using only the primary sequence. Ideal for fast, structure-free screening of small proteins (<250 AA).
 
 - **[PIP-BERT](https://huggingface.co/MuthuS97/PIP-BERT)**  
-  Fine-tuned **ProtBERT** classifier for rapid screening of potential protease inhibitors in large datasets. Outputs class probabilities and confidence scores.
+  Fine-tuned **ProtBERT** binary classifier. Predicts if a protein sequence is a potential protease inhibitor using only the primary sequence. Ideal for fast, structure-free screening of small proteins (<250 AA).
 
 - **[structuralmodule-protease_inhibitors](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors)**  
   Unsupervised one-class autoencoder (PyOD/PyTorch) for structural filtering. Detects non-PI-like structures via high reconstruction error. Trained on ~18k curated protease inhibitor structures from MEROPS + AlphaFold.  
