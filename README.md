@@ -21,7 +21,7 @@ These models power the pipeline and can also be used independently (see example 
 _Department of Biological Sciences, Birla Institute of Technology and Science, Pilani, India_
 
 * __Balakumaran Chandrasekar__ <a itemprop="sameAs" content="https://orcid.org/0000-0001-5696-6777" href="https://orcid.org/0000-0001-5696-6777" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>   </br>
-_Indian Institute of Technology Jodhpur_
+_Indian Institute of Technology, Jodhpur, India_
 
 ## Abstract
 
