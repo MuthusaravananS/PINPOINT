@@ -9,12 +9,31 @@ This repository contains the code and notebooks for **SSP-protease-inhibitor-pre
 ## Fine-Tuned Models (Openly Available on Hugging Face)
 
 The core prediction models from this study were publicly hosted and free to use/download:
+All models focus on small proteins (<250 AA) and are trained on curated MEROPS/UniProt/AlphaFold data.
 
-- **[PIPES-M](https://huggingface.co/MuthuS97/PIPES-M)**: Fine-tuned ESM-2 (150M parameters) binary classifier for potential protease inhibitor from primary sequences only (no structure needed). Trained on MEROPS/UniProt inhibitors data for small proteins (<250 AA) for fast sequence-based screening.
-- **[PIP-BERT](https://huggingface.co/MuthuS97/PIP-BERT)**: Fine-tuned ProtBERT classifier for rapid screening of potential protease inhibitors. Outputs class probabilities and confidence scores. Ideal for large-scale sequence datasets.
-- **[structuralmodule-protease_inhibitors](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors)**: Unsupervised one-class autoencoder (via PyOD) that filters protein structures based on reconstruction error. Trained on ~18k curated protease inhibitor structures from MEROPS/AlphaFold. 
+## Available Models on Hugging Face
 
-These models power the pipeline and can also be used independently (see example notebooks linked on each HF page).
+| Model | Type | Base | Key Features | Link |
+|-------|------|------|--------------|------|
+| **PIPES-M** | Binary sequence classifier | ESM-2 (150M) | Fast sequence-based screening, no structure needed | [![Open PIPES-M](https://img.shields.io/badge/%F0%9F%A4%97%20PIPES-M-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIPES-M) |
+| **PIP-BERT** | Binary sequence classifier | ProtBERT | Rapid large-scale screening, probability + confidence scores | [![Open PIP-BERT](https://img.shields.io/badge/%F0%9F%A4%97%20PIP-BERT-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIP-BERT) |
+| **structuralmodule-protease_inhibitors** | Unsupervised one-class autoencoder (PyOD) | RCSB embeddings | Filters protein structures by reconstruction error, trained on ~18k PI structures | [![Open Structural Module](https://img.shields.io/badge/%F0%9F%A4%97%20Structural%20Module-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors) |
+
+### Quick Overview
+
+- **[PIPES-M](https://huggingface.co/MuthuS97/PIPES-M)**  
+  Fine-tuned **ESM-2** (150M params) binary classifier. Predicts if a protein sequence is a potential protease inhibitor using only the primary sequence. Ideal for fast, structure-free screening of small proteins (<250 AA).
+
+- **[PIP-BERT](https://huggingface.co/MuthuS97/PIP-BERT)**  
+  Fine-tuned **ProtBERT** classifier for rapid screening of potential protease inhibitors in large datasets. Outputs class probabilities and confidence scores.
+
+- **[structuralmodule-protease_inhibitors](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors)**  
+  Unsupervised one-class autoencoder (PyOD/PyTorch) for structural filtering. Detects non-PI-like structures via high reconstruction error. Trained on ~18k curated protease inhibitor structures from MEROPS + AlphaFold.  
+  → Input: standardized RCSB embeddings (not raw PDB/CIF). Use the provided scaler.
+
+If you use these in your work, please cite the repo / Hugging Face pages.
+
+Star ⭐ the repo if you find it useful! These models power the pipeline and can also be used independently (see example notebooks linked on each HF page).
 
 ## Authors
 * __Muthusaravanan S__ <a itemprop="sameAs" content="https://orcid.org/0000-0002-0600-4534" href="https://orcid.org/0000-0002-0600-4534" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>   </br>
