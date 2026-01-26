@@ -94,7 +94,7 @@ Muthusaravanan S et al. (in preparation).
 ----
 We welcome datasets of known/putative protease inhibitors or SSPs to improve accuracy. Contact us!
 
-> Open models and  access to data democratize discovery. We encourage sharing sequences/structures in public repositories for open use.
+> Open models and  access to data democratize scientific discovery. We encourage sharing sequences/structures in public repositories for open use.
 
 ## For inquiries, contact us.__
 
