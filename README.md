@@ -34,7 +34,7 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
 
 If you use these in your work, please cite the repo / Hugging Face pages.
 
-Star ⭐ the repo if you find it useful! These models power the pipeline and can also be used independently (see example notebooks linked on each HF page).
+Star ⭐ the repo if you find it useful! 
 
 ## Authors
 * __Muthusaravanan S__ <a itemprop="sameAs" content="https://orcid.org/0000-0002-0600-4534" href="https://orcid.org/0000-0002-0600-4534" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>   </br>
