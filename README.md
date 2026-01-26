@@ -56,13 +56,13 @@ To use protease-inhibitor-prediction, first prepare mature protein sequences by 
 1. **Sequence Module** — Initial screening with fine-tuned sequence based models  
    [Open in Colab](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
 
-2. **ESMFold API** — De novo structure prediction for screened candidates  (need positive hits mature sequences as .fasta)  
+2. **ESMFold API** — De novo structure prediction for screened candidates in PDB format (need positive hits mature sequences as .fasta)  
    [Open in Colab](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
 
-3. **AlphaFold Fetch** — Download precomputed AlphaFold structures (need positive hits UniProt IDs as .txt)  
+3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hits UniProt IDs as .txt)  
    [Open in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
 
-4. **Structural Module** — Filter structures lacking protease inhibitor-like features  
+4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format) 
    [Open in Colab](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
 
 5. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
