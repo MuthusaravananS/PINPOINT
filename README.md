@@ -74,7 +74,7 @@ To use protease-inhibitor-prediction, first prepare mature protein sequences by 
 
 - **Google Colab** (free tier sufficient for <4000 sequences; Pro recommended for larger batches or longer runs).  
 - GPU acceleration enabled (Runtime → Change runtime type → GPU).  
-- No local install needed, but for very large-scale screening: local GPU setup is recommended. 
+- No local install needed, but for very large-scale screening local GPU setup is recommended. 
 
 __If you use this tool or models, please cite:__ </br>
 Muthusaravanan S et al. (in preparation).
