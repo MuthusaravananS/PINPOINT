@@ -1,4 +1,4 @@
-# **PINPOINT** – <u>P</u>rotease <u>I</u><u>N</u>hibitor <u>P</u>redicti<u>O</u><u>N</u> at <u>P</u>lant–pathoge<u>N</u> <u>I</u>n<u>T</u>erface
+# **PINPOINT** – <u>P</u>rotease <u>I</u><u>N</u>hibitor <u>P</u>redicti<u>O</u><u>N</u> at <u>P</u>lant–pathogen <u>I</u>n<u>T</u>erface
 
 # Open pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
 
