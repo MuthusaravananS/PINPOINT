@@ -8,9 +8,9 @@ This repository contains the code and notebooks for **SSP-protease-inhibitor-pre
 
 ## Fine-Tuned Models (Openly Available on Hugging Face)
 
-The core prediction models are publicly hosted and free to use/download:
+The core prediction models from this stugy were publicly hosted and free to use/download:
 
-- **[PIPES-M](https://huggingface.co/MuthuS97/PIPES-M)**: Fine-tuned ESM-2 (150M parameters) binary classifier for potential protease inhibitor from primary sequences only (no structure needed). Trained on MEROPS/UniProt data for small proteins (<250 AA). Use for fast sequence-based screening.
+- **[PIPES-M](https://huggingface.co/MuthuS97/PIPES-M)**: Fine-tuned ESM-2 (150M parameters) binary classifier for potential protease inhibitor from primary sequences only (no structure needed). Trained on MEROPS/UniProt inhibitors data for small proteins (<250 AA) for fast sequence-based screening.
 - **[PIP-BERT](https://huggingface.co/MuthuS97/PIP-BERT)**: Fine-tuned ProtBERT classifier for rapid screening of potential protease inhibitors. Outputs class probabilities and confidence scores. Ideal for large-scale sequence datasets.
 - **[structuralmodule-protease_inhibitors](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors)**: Unsupervised one-class autoencoder (via PyOD) that filters protein structures based on reconstruction error. Trained on ~18k curated protease inhibitor structures from MEROPS/AlphaFold. 
 
