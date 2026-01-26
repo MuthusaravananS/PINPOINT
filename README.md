@@ -1,6 +1,6 @@
 # **PINPOINT** – <u>P</u>rotease <u>I</u><u>N</u>hibitor <u>P</u>redicti<u>O</u><u>N</u> at <u>P</u>lant–pathoge<u>N</u> <u>I</u>n<u>T</u>erface
 
-# Pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
+# Open pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
