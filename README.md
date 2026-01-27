@@ -30,7 +30,7 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
 
 - **[structuralmodule-protease_inhibitors](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors)**  
   Unsupervised one-class autoencoder (PyOD/PyTorch) for structural filtering. Detects non-PI-like structures via high reconstruction error. Trained on ~18k curated protease inhibitor structures from MEROPS + AlphaFold.  
-  → Input: standardized RCSB embeddings (not raw PDB/CIF). Use the provided scaler.
+  → Input: standardized RCSB embeddings calculated from input .cif (not raw PDB/CIF). Use the provided scaler.
 
 If you use these in your work, please cite the repo / Hugging Face pages.
 
