@@ -49,17 +49,17 @@ _Indian Institute of Technology, Jodhpur, India_
 
 ## Usage Instructions
 
-To use protease-inhibitor-prediction, first prepare mature protein sequences by removing signal peptides using an external tool such as SignalP (highly recommended and required for accurate sequence-based predictions). Then run the **Sequence Module** Colab notebook to screen candidates with the fine-tuned PIPES-M and PIP-BERT models (handles up to ~4000 sequences on free Colab GPU). For promising hits, obtain 3D structures either via the **ESMFold API** notebook (de novo prediction) or the **AlphaFold Fetch** notebook (download precomputed models by uploading UniProt IDs in a .txt file). Next, apply the **Structural Module** notebook to filter candidates using the dedicated autoencoder model and retain only those with protease inhibitor-like structural features. Finally, for the retained candidates, model heterodimer interactions with target immune proteases using your preferred protein multimeric structure modeling platform. (GPU-accelerated Local ColabFold is strongly recommended for efficient screening). All steps except mutimeric complex modeling can be run directly in Google Colab with no installation required; simply open the notebooks and enable GPU runtime for optimal performance. Just follow the usage instrcution in each Notebook. 
+To use protease-inhibitor-prediction,  run the **Sequence Module** Colab notebook to screen candidates with the fine-tuned PIPES-M and PIP-BERT models (handles up to ~4000 sequences on free Colab GPU). For promising hits, obtain 3D structures either via the **ESMFold API** notebook (de novo prediction) or the **AlphaFold Fetch** notebook (download precomputed models by uploading UniProt IDs in a .txt file). Next, apply the **Structural Module** notebook to filter candidates using the dedicated autoencoder model and retain only those with protease inhibitor-like structural features. Finally, for the retained candidates, model them as heterodimer interactions with target immune proteases of interest using your preferred  multimeric protein structure modeling platform. (GPU-accelerated Local ColabFold is strongly recommended for large-scale screening). All steps except mutimeric complex modeling can be run directly in Google Colab with no installation required; simply open the notebooks and enable GPU runtime for optimal performance. Just follow the usage instrcution in each Notebook. 
 
 ## Colab Notebooks (Pipeline Modules)
 
 1. **Sequence Module** — Initial screening with fine-tuned sequence based models  
    [Open in Colab](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
 
-2. **ESMFold API** — De novo structure prediction for screened candidates in PDB format (need positive hits mature sequences as .fasta)  
+2. **ESMFold API** — De novo structure prediction for screened candidates in PDB format (need positive hit's mature sequences as .fasta)  
    [Open in Colab](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
 
-3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hits UniProt IDs as .txt)  
+3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hit's UniProt IDs as .txt)  
    [Open in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
 
 4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format) 
