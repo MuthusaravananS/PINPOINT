@@ -62,7 +62,7 @@ To use protease-inhibitor-prediction,  run the **Sequence Module** Colab noteboo
 3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hit's UniProt IDs as .txt)  
    [Open in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
 
-4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format) 
+4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format as compressed .ZIP or .rar) 
    [Open in Colab](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
 
 5. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
