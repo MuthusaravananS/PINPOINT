@@ -28,10 +28,10 @@ To use protease-inhibitor-prediction,  run the **Sequence Module** Colab noteboo
 Click a button below to open the corresponding pipeline module directly in Google Colab:
 
 1. **Sequence Module** — Initial screening with fine-tuned sequence based models  
-  [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
+[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
 
 2. **ESMFold API** — De novo structure prediction for screened candidates in PDB format (need positive hit's mature sequences as .fasta)  
- [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
+[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
 
 3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hit's UniProt IDs as .txt)  
  [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
