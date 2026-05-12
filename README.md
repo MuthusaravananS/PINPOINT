@@ -20,6 +20,15 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
 | **PIP-BERT** | Binary sequence classifier | ProtBERT | Large-scale sequence-based screening| [![Open PIP-BERT](https://img.shields.io/badge/%F0%9F%A4%97%20PIP-BERT-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIP-BERT) |
 | **structuralmodule-protease_inhibitors** | Unsupervised one-class autoencoder (PyOD) | RCSB embeddings | Filters non-inhibtior protein structures by reconstruction error, trained on ~18k PI structures | [![Open Structural Module](https://img.shields.io/badge/%F0%9F%A4%97%20Structural%20Module-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors) |
 
+## 🛠 Usage
+You can load these models directly via the `transformers` library:
+
+```python
+from transformers import AutoModel, AutoTokenizer
+
+model = AutoModel.from_pretrained("MuthuS97/PIP-BERT")
+model = AutoModel.from_pretrained("MuthuS97/PIPES-M")
+
 ### Quick Overview
 
 - **[PIPES-M](https://huggingface.co/MuthuS97/PIPES-M)**  
