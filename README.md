@@ -65,7 +65,10 @@ To use protease-inhibitor-prediction,  run the **Sequence Module** Colab noteboo
 4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format as compressed .ZIP or .rar) 
    [Open in Colab](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
 
-5. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
+5. **EffectorP module** — this module uses EffectorP-3.0 to predict subceullar localization of SSPs.   
+   [Open in Colab](https://colab.research.google.com/drive/1gpCnVmiLWnLv0eeZgnMx6lzQOWvyeRLp?usp=sharing)
+
+6. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
    [GPU-accelerated ColabFold](https://github.com/sokrypton/ColabFold?tab=readme-ov-file#gpu-accelerated-search-with-colabfold_search)
 
 **Note:** Free Colab has session limits (~12h runtime, occasional disconnects); Substribe for Google Colab Pro to remove restrictions for heavy use.
