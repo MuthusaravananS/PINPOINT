@@ -20,6 +20,11 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
 | **PIP-BERT** | Binary sequence classifier | ProtBERT | Large-scale sequence-based screening| [![Open PIP-BERT](https://img.shields.io/badge/%F0%9F%A4%97%20PIP-BERT-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIP-BERT) |
 | **structuralmodule-protease_inhibitors** | Unsupervised one-class autoencoder (PyOD) | RCSB embeddings | Filters non-inhibtior protein structures by reconstruction error, trained on ~18k PI structures | [![Open Structural Module](https://img.shields.io/badge/%F0%9F%A4%97%20Structural%20Module-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors) |
 
+### 🚀 Launch Inference Modules
+Click a button below to open the corresponding pipeline module directly in Google Colab:
+
+[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
+[![Open Structural Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
 ## 🛠 Usage
 You can load these models directly via the `transformers` library:
 
