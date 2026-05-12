@@ -20,11 +20,39 @@ All models focus on small proteins (<250 AA) and are trained on curated MEROPS/U
 | **PIP-BERT** | Binary sequence classifier | ProtBERT | Large-scale sequence-based screening| [![Open PIP-BERT](https://img.shields.io/badge/%F0%9F%A4%97%20PIP-BERT-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/PIP-BERT) |
 | **structuralmodule-protease_inhibitors** | Unsupervised one-class autoencoder (PyOD) | RCSB embeddings | Filters non-inhibtior protein structures by reconstruction error, trained on ~18k PI structures | [![Open Structural Module](https://img.shields.io/badge/%F0%9F%A4%97%20Structural%20Module-blue?style=flat&logo=huggingface&logoColor=white)](https://huggingface.co/MuthuS97/structuralmodule-protease_inhibitors) |
 
+## Usage Instructions
+
+To use protease-inhibitor-prediction,  run the **Sequence Module** Colab notebook to screen candidates with the fine-tuned PIPES-M and PIP-BERT models (handles up to ~4000 sequences on free Colab GPU). For promising hits, obtain 3D structures either via the **ESMFold API** notebook (de novo prediction) or the **AlphaFold Fetch** notebook (download precomputed models by uploading UniProt IDs in a .txt file). Next, apply the **Structural Module** notebook to filter candidates using the dedicated autoencoder model and retain only those with protease inhibitor-like structural features. Finally, for the retained candidates, model them as heterodimer interactions with target immune proteases of interest using your preferred  multimeric protein structure modeling platform. (GPU-accelerated Local ColabFold is strongly recommended for large-scale screening). All steps except mutimeric complex modeling can be run directly in Google Colab with no installation required; simply open the notebooks and enable GPU runtime for optimal performance. Just follow the usage instrcution in each Notebook. 
+
 ### 🚀 Launch Inference Modules
 Click a button below to open the corresponding pipeline module directly in Google Colab:
 
-[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
-[![Open Structural Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
+1. **Sequence Module** — Initial screening with fine-tuned sequence based models  
+  [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
+
+2. **ESMFold API** — De novo structure prediction for screened candidates in PDB format (need positive hit's mature sequences as .fasta)  
+ [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
+
+3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hit's UniProt IDs as .txt)  
+ [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
+
+4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format as compressed .ZIP or .rar) 
+ [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
+
+5. **EffectorP module** — this module uses EffectorP-3.0 to predict subceullar localization of SSPs.   
+[![Open Sequence Module in Colab](https://colab.research.google.com/drive/1gpCnVmiLWnLv0eeZgnMx6lzQOWvyeRLp?usp=sharing)
+
+6. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
+   [GPU-accelerated ColabFold](https://github.com/sokrypton/ColabFold?tab=readme-ov-file#gpu-accelerated-search-with-colabfold_search)
+
+**Note:** Free Colab has session limits (~12h runtime, occasional disconnects); Substribe for Google Colab Pro to remove restrictions for heavy use.
+
+## Computational Requirements
+
+- **Google Colab** (free tier sufficient for <4000 sequences; Pro recommended for larger batches or longer runs).  
+- GPU acceleration enabled (Runtime → Change runtime type → GPU).  
+- No local install needed, but for very large-scale screening local GPU setup is recommended. 
+
 ## 🛠 Usage
 You can load these models directly via the `transformers` library:
 
@@ -61,37 +89,7 @@ _Indian Institute of Technology, Jodhpur, India_
 
 > To be included...
 
-## Usage Instructions
 
-To use protease-inhibitor-prediction,  run the **Sequence Module** Colab notebook to screen candidates with the fine-tuned PIPES-M and PIP-BERT models (handles up to ~4000 sequences on free Colab GPU). For promising hits, obtain 3D structures either via the **ESMFold API** notebook (de novo prediction) or the **AlphaFold Fetch** notebook (download precomputed models by uploading UniProt IDs in a .txt file). Next, apply the **Structural Module** notebook to filter candidates using the dedicated autoencoder model and retain only those with protease inhibitor-like structural features. Finally, for the retained candidates, model them as heterodimer interactions with target immune proteases of interest using your preferred  multimeric protein structure modeling platform. (GPU-accelerated Local ColabFold is strongly recommended for large-scale screening). All steps except mutimeric complex modeling can be run directly in Google Colab with no installation required; simply open the notebooks and enable GPU runtime for optimal performance. Just follow the usage instrcution in each Notebook. 
-
-## Colab Notebooks (Pipeline Modules)
-
-1. **Sequence Module** — Initial screening with fine-tuned sequence based models  
-   [Open in Colab](https://colab.research.google.com/drive/1v6fegGSLdlyv4GWx8C7sL22wZBunVtEr?usp=sharing)
-
-2. **ESMFold API** — De novo structure prediction for screened candidates in PDB format (need positive hit's mature sequences as .fasta)  
-   [Open in Colab](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
-
-3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hit's UniProt IDs as .txt)  
-   [Open in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
-
-4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format as compressed .ZIP or .rar) 
-   [Open in Colab](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
-
-5. **EffectorP module** — this module uses EffectorP-3.0 to predict subceullar localization of SSPs.   
-   [Open in Colab](https://colab.research.google.com/drive/1gpCnVmiLWnLv0eeZgnMx6lzQOWvyeRLp?usp=sharing)
-
-6. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
-   [GPU-accelerated ColabFold](https://github.com/sokrypton/ColabFold?tab=readme-ov-file#gpu-accelerated-search-with-colabfold_search)
-
-**Note:** Free Colab has session limits (~12h runtime, occasional disconnects); Substribe for Google Colab Pro to remove restrictions for heavy use.
-
-## Computational Requirements
-
-- **Google Colab** (free tier sufficient for <4000 sequences; Pro recommended for larger batches or longer runs).  
-- GPU acceleration enabled (Runtime → Change runtime type → GPU).  
-- No local install needed, but for very large-scale screening local GPU setup is recommended. 
 
 __If you use this tool or models, please cite:__ </br>
 Muthusaravanan S et al. (in preparation).
