@@ -12,7 +12,7 @@ The core prediction models from this study were publicly hosted and free to use/
 
 All models focus on small proteins (<250 AA) and are trained on curated MEROPS/UniProt/AlphaFold data.
 
-## Available Models on Hugging Face
+## Available Models weights on Hugging Face for inference
 
 | Model | Type | Base | Key Features | Link |
 |-------|------|------|--------------|------|
