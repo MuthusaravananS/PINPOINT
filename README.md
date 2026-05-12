@@ -34,13 +34,13 @@ Click a button below to open the corresponding pipeline module directly in Googl
 [![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1CML84K8KxbpijUnjN15uEoBxXgMQKeYL?usp=sharing)
 
 3. **AlphaFold Fetch** — Download precomputed AlphaFold structures in .cif format (need positive hit's UniProt IDs as .txt)  
- [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
+[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1J9AxU9C3dt2s4VVAJ-RUskXHlIOwtyHH?usp=sharing)
 
 4. **Structural Module** — Filter structures lacking protease inhibitor-like features (needs protein structure files in .cif format as compressed .ZIP or .rar) 
- [![Open Sequence Module in Colab](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
+[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1JLhLpvXG4plzPtIliG_CJnYui6P8Pu1J?usp=sharing)
 
 5. **EffectorP module** — this module uses EffectorP-3.0 to predict subceullar localization of SSPs.   
-[![Open Sequence Module in Colab](https://colab.research.google.com/drive/1gpCnVmiLWnLv0eeZgnMx6lzQOWvyeRLp?usp=sharing)
+[![Open Sequence Module in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1gpCnVmiLWnLv0eeZgnMx6lzQOWvyeRLp?usp=sharing)
 
 6. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
    [GPU-accelerated ColabFold](https://github.com/sokrypton/ColabFold?tab=readme-ov-file#gpu-accelerated-search-with-colabfold_search)
