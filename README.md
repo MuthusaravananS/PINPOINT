@@ -1,4 +1,4 @@
-## PINPOINT: <ins>P</ins>rotease <ins>I</ins><ins>N</ins>hibitor <ins>P</ins>redicti<ins>O</ins>n at plant–pathogen <ins>INT</ins>erface using large language models and structural modeling. 
+## PINPOINT: <ins>P</ins>rotease <ins>I</ins><ins>N</ins>hibitor <ins>P</ins>redicti<ins>O</ins>n at plant–pathogen <ins>INT</ins>erface using protein language models and structural modeling. 
 
 # Open pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
 
@@ -68,7 +68,7 @@ To use protease-inhibitor-prediction,  run the **Sequence Module** Colab noteboo
 5. **Heterodimer Modeling** — Recommended tool for final interaction prediction  
    [GPU-accelerated ColabFold](https://github.com/sokrypton/ColabFold?tab=readme-ov-file#gpu-accelerated-search-with-colabfold_search)
 
-**Note:** Free Colab has session limits (~12h runtime, occasional disconnects); Colab Pro removes most restrictions for heavy use.
+**Note:** Free Colab has session limits (~12h runtime, occasional disconnects); Substribe for Google Colab Pro to remove restrictions for heavy use.
 
 ## Computational Requirements
 
