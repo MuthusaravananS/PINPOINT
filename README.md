@@ -28,7 +28,7 @@ from transformers import AutoModel, AutoTokenizer
 
 model = AutoModel.from_pretrained("MuthuS97/PIP-BERT")
 model = AutoModel.from_pretrained("MuthuS97/PIPES-M")
-
+```
 ### Quick Overview
 
 - **[PIPES-M](https://huggingface.co/MuthuS97/PIPES-M)**  
