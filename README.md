@@ -120,7 +120,7 @@ We welcome datasets of known/putative protease inhibitors or SSPs to improve acc
 
 > Open models and  access to data democratize scientific discovery. We encourage sharing sequences/structures in public repositories for open use.
 
-## For inquiries
+## For inquiries or want to contribute to PINPOINT 
 # Contact 
 ----
 Muthusaravanan S - [@Muthu_Sivaram](https://x.com/Muthu_Sivaram) - muthusaravanan.ind@gmail.com
