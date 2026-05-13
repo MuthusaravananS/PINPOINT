@@ -12,6 +12,7 @@
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Paper: In Prep](https://img.shields.io/badge/Paper-In_Preparation-orange?style=flat-square&logo=academia)](https://github.com/MuthusaravananS/PINPOINT)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Models-Hugging_Face-FFD21E?style=flat-square)](https://huggingface.co/MuthuS97)
 
 This repository contains the inference notebooks of **PINPOINT**, a deep learning pipeline for identifying small secretory proteins (SSPs) with no known Pfam domain as protease inhibitors based on protein sequence and structure. All modules run directly in Google Colab—no local installation required. The free tier GPU can handle up to ~4000 SSPs efficiently; for larger datasets, we recommend **Colab Pro** (for extended runtime/GPU) or local installation with GPU acceleration.
 
