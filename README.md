@@ -1,11 +1,13 @@
 ## PINPOINT: <ins>P</ins>rotease <ins>I</ins><ins>N</ins>hibitor <ins>P</ins>redicti<ins>O</ins>n at plant–pathogen <ins>INT</ins>erface using protein language models and structural modeling. 
 
-█████╗ ██╗███╗   ██╗██████╗  ██████╗ ██╗███╗   ██╗████████╗
+```text
+ █████╗ ██╗███╗   ██╗██████╗  ██████╗ ██╗███╗   ██╗████████╗
  ██╔══██╗██║████╗  ██║██╔══██╗██╔═══██╗██║████╗  ██║╚══██╔══╝
  ██████╔╝██║██╔██╗ ██║██████╔╝██║   ██║██║██╔██╗ ██║   ██║   
  ██╔═══╝ ██║██║╚██╗██║██╔═══╝ ██║   ██║██║██║╚██╗██║   ██║   
  ██║     ██║██║ ╚████║██║     ╚██████╔╝██║██║ ╚████║   ██║   
  ╚═╝     ╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝ ╚═╝╚═╝  ╚═══╝   ╚═╝
+```
 # Open pipeline proposed for discovering novel protease inhibitor at plant-pathogen interface
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
