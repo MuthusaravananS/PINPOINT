@@ -69,6 +69,7 @@ from transformers import AutoModel, AutoTokenizer
 
 model = AutoModel.from_pretrained("MuthuS97/PIP-BERT")
 model = AutoModel.from_pretrained("MuthuS97/PIPES-M")
+# please refer infrence notebook for how to do it. 
 ```
 ### Quick Overview
 
